@@ -4,6 +4,9 @@
 > 采用《CHZUyyd 安卓版执行方案》中的 **B1 路线**：原生 Compose 界面 + Chaquopy
 > 内嵌 Python 3.14 协议层；不是把桌面 tkinter 程序直接打包成 APK。
 
+**许可：GPL-3.0-or-later** — 本项目以 GNU 通用公共许可证第 3 版（或其后续版本）
+发布，许可证全文见 [LICENSE](LICENSE)。
+
 ![账号页](docs/images/01-account.png)
 
 ## 一、成果
@@ -18,6 +21,7 @@
 | 构建说明 | `docs/构建说明.md` |
 | 测试报告 | `docs/真机测试报告.md` |
 | 生成约定 | `docs/云运动助手-生成约定.md` |
+| 许可证 | `LICENSE`（GPL-3.0-or-later） |
 
 > **安装包放在 GitHub Releases**（源码仓库不保存 28MB 的 APK 二进制）。
 > **仓库不包含签名私钥**：`android/keystore/` 与 `android/keystore.properties`
@@ -191,6 +195,45 @@ AndroidX / Compose / Chaquopy / gmssl 等第三方组件说明见
 
 ## 十一、许可
 
-仅用于技术交流学习。原始桌面版协议逻辑来自 CHZUyyd / yunForNewVersion 项目；
-Android 端界面、服务、调度与协议封装为本项目新写。
+本项目采用 **GNU 通用公共许可证第 3 版（或其后续版本）**，即
+**GPL-3.0-or-later**（SPDX 标识：`GPL-3.0-or-later`）。
+许可证全文见仓库根目录 [LICENSE](LICENSE)。
+
+```
+CHZUyyd Android —— 滁州学院云运动助手（安卓版）
+Copyright (C) 2026 sanctuary-x
+
+本程序是自由软件：你可以依据自由软件基金会（FSF）发布的
+GNU 通用公共许可证第 3 版（或你选择的任何更新版本）的条款，
+再分发和/或修改它。
+
+本程序分发时希望它有用，但不提供任何担保，甚至不提供适销性
+或特定用途适用性的默示担保。详见 GNU 通用公共许可证。
+
+你应当已随本程序收到一份 GNU 通用公共许可证副本；
+如果没有，见 <https://www.gnu.org/licenses/>。
+```
+
+### 分发与修改
+
+- **分发 APK 需同时提供源代码**：从本仓库构建并对外分发 APK 时，须一并提供
+  对应的完整源代码（即本仓库，满足 GPL-3.0 第 6 条对 Corresponding Source
+  的要求）；
+- **修改版仍是 GPL**：修改后再分发，必须继续以 GPL-3.0 发布、保留许可声明，
+  并按第 5 条注明“已修改”及日期；
+- **不得附加额外限制**：不得对接收者施加 GPL-3.0 之外的许可费、专利限制等
+  额外约束（第 10、11 条）；
+- 商用分发、二次开发均被允许，但须同样开源。
+
+### 第三方组件
+
+gmssl（MIT）、Chaquopy（MIT）、AndroidX / Compose / Material 3 / Kotlin /
+Gradle（Apache-2.0）均与 GPL-3.0 兼容，逐项说明见
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+### 来源说明
+
+原始桌面版协议逻辑来自 CHZUyyd / yunForNewVersion 项目；Android 端的界面、
+服务、闹钟调度与协议封装为本项目新写。本程序仅供技术交流学习，请遵守
+学校规定，风险自负；许可证不代表对使用场景的认可或授权。
 

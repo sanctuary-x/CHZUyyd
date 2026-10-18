@@ -29,3 +29,13 @@ adb install CHZUyyd-v1.0.0-arm64.apk
 - 支持单条删除 / 清空全部轨迹；
 - 登录会让手机端云运动下线，请减少重复登录；
 - 仅供技术交流学习，请遵守学校规定，风险自负。
+
+## 许可
+
+本安装包内的程序以 **GNU 通用公共许可证第 3 版或其后续版本**
+（GPL-3.0-or-later）发布。许可证全文与完整源代码见：
+
+- 许可证：<https://github.com/sanctuary-x/CHZUyyd/blob/main/LICENSE>
+- 源代码：<https://github.com/sanctuary-x/CHZUyyd>
+
+按 GPL-3.0 的要求，分发本 APK 时须同时提供上述对应源代码。
