@@ -1,0 +1,19 @@
+# CHZUyyd Android build outputs and caches
+android/.gradle/
+android/build/
+android/app/build/
+android/.kotlin/
+android/local.properties
+# 签名私钥与密码绝不入库
+android/keystore/
+android/keystore.properties
+*.jks
+*.keystore
+
+dist/
+**/__pycache__/
+*.log
+*.pyc
+.idea/
+*.iml
+.DS_Store
