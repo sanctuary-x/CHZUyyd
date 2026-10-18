@@ -10,7 +10,7 @@
 
 | 内容 | 路径 |
 |---|---|
-| 可安装 APK（arm64，已签名） | `release/CHZUyyd-v1.0.0-arm64.apk` |
+| 可安装 APK（arm64，已签名） | [GitHub Releases v1.0.0](https://github.com/sanctuary-x/CHZUyyd/releases/latest) |
 | APK SHA-256 | `release/SHA256.txt` |
 | 完整 Android 工程 | `android/` |
 | 纯 Python 协议层 | `python/proto/` |
@@ -19,8 +19,9 @@
 | 测试报告 | `docs/真机测试报告.md` |
 | 生成约定 | `docs/云运动助手-生成约定.md` |
 
+> **安装包放在 GitHub Releases**（源码仓库不保存 28MB 的 APK 二进制）。
 > **仓库不包含签名私钥**：`android/keystore/` 与 `android/keystore.properties`
-> 已被 `.gitignore` 排除。仓库内的 APK 已用本机私钥签名，可直接安装；
+> 已被 `.gitignore` 排除。Releases 中的 APK 已用本机私钥签名，可直接安装；
 > 如需重新构建 release，请按 `docs/构建说明.md` 自行生成签名。
 
 ## 二、功能（与桌面版对齐）
@@ -117,7 +118,7 @@ cd android
 > 工程使用 `android.overridePathCheck=true`，因此可以直接放在中文路径下构建。
 > 仓库不包含 `android/keystore.properties` 与 `android/keystore/*.jks`；
 > 重新构建 release 前请按 `docs/构建说明.md` 生成自己的签名。
-> 仓库内的 APK 已签名，可直接安装。
+> Releases 中的 APK 已签名，可直接安装。
 
 ## 六、测试结果（本机实测）
 
@@ -165,7 +166,7 @@ CHZUyyd-Android/
 │   ├── test_proto_offline.py     # 12 项协议离线测试
 │   └── live_proto_check.py       # 真机/PC 联调脚本（需 CHZU_USER/CHZU_PASS）
 ├── docs/
-├── release/                      # 已签名 APK + SHA256（入库）
+├── release/                      # APK 校验值 + 发布说明（APK 在 GitHub Releases）
 ├── dist/                         # 本地构建输出（gitignore）
 └── build_apk.bat
 ```

@@ -2,15 +2,20 @@
 
 | 文件 | 说明 |
 |---|---|
-| `CHZUyyd-v1.0.0-arm64.apk` | 滁州学院安卓版，arm64-v8a，已签名 |
+| `CHZUyyd-v1.0.0-arm64.apk` | 滁州学院安卓版，arm64-v8a，已签名（GitHub Releases 资产） |
 | `SHA256.txt` | APK 校验值 |
 
-## 安装
+## 下载与安装
 
-1. 把 APK 传到 Android 手机（微信文件传输 / 数据线 / adb 均可）；
-2. 点击 APK，按提示允许“安装未知来源应用”；
-3. 安装后桌面出现「云运动·滁州」；
-4. 首次启动允许通知权限；到「设置」页按引导授权精确闹钟、电池优化、自启动。
+APK 在仓库的 **Releases → v1.0.0** 中下载：
+
+<https://github.com/sanctuary-x/CHZUyyd/releases/latest>
+
+1. 下载 `CHZUyyd-v1.0.0-arm64.apk`；
+2. 传到 Android 手机（微信文件传输 / 数据线 / adb 均可）；
+3. 点击 APK，按提示允许“安装未知来源应用”；
+4. 安装后桌面出现「云运动·滁州」；
+5. 首次启动允许通知权限；到「设置」页按引导授权精确闹钟、电池优化、自启动。
 
 ```powershell
 adb install CHZUyyd-v1.0.0-arm64.apk
